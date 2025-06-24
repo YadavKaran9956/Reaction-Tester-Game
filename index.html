@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Tester Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="RT_Favicon.png" type="image/png">
+</head>
+
+<body>
+    <h1 class="mainHeadPara">The Reaction Tester Game</h1>
+    <section id="intro-wrapper">
+
+        <p class="mainHeadPara">Welcome to the mind blowing reaction tester game. This game checks your observing power
+            and the reaction time also. Some of the basic steps to play this game are as below:</p>
+
+        <ul class="mainHeadPara" type="none">
+            <li>Enter your name and click on the "Let's Play" button.</li>
+            <li>You have to click on the moving box ASAP to get the minimum reaction time.</li>
+        </ul>
+
+        <div class="btn-wrap">
+            <button class="btn" id="strtBtn">Start</button>
+        </div>
+    </section>
+
+    <section id="info-wrapper">
+        <div class="name-form">
+            <div class="field">
+                <div class="labl">
+                    <label for="fullName">Full Name: </label>
+                </div>
+                <div class="labl-inp">
+                    <input type="text" id="fullName" size="30">
+                </div>
+            </div>
+            <div class="field">
+                <div class="labl">
+                    <label for="playerName">Player Name: </label>
+                </div>
+                <div class="labl-inp">
+                    <input type="text" id="playerName" size="30">
+                </div>
+            </div>
+            <div class="field">
+                <div class="labl">
+                    <label for="email">Email: </label>
+                </div>
+                <div class="labl-inp">
+                    <input type="email" id="email" size="30">
+                </div>
+            </div>
+
+            <div class="btn">
+                <button id="backBtn">Back</button>
+                <button id="submitBtn">Submit & Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="game-wrapper">
+        <div class="showInfo">
+            <div class="gameInfo">Player Name: <span class="plyrInfo"></span></div>
+            <div class="gameInfo1">Reaction Time: <span class="reactionTime"></span></div>
+        </div>
+        <div class="square"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
